@@ -58,12 +58,6 @@ class ChatProtocol:
             users = nick.split(",")
             print("Logged in users: {}. ".format(users))
 
-def handle_client(client_sock, lock):
-    protocol = ChatProtocol("")
-    while True:
-        client_msg = client_sock.recv(MSG_SIZE)
-         protocol.parse(client_msg,client_sock, lock) # ma to vyzerat takto ale hadže users ako chybu (client_msg, USERS,client_sock, lock)
-         client_sock.close()
 
 
 
