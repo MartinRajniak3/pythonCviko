@@ -1,0 +1,5 @@
+| Title                | Year | Genre  | Duration | Director   |
+| Matrix               | 1999 | scifi  | 136m | Wachowski  |
+| Jurrasic Park        | 1993 | action | 127m | Spielberg  |
+| Stargate             | 1994 | scifi  | 128m | Oneil      |
+| It                   | 2017 | horror | 135m | Muschietti |
