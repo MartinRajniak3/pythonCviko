@@ -19,12 +19,12 @@ def parsujRSS(rss_url):
 
     root = ET.fromstring(rss)
     for potomok in root:
-        if potomok.tag == "{https://www.w3.org/2005/Atom}entry":
+        if potomok.tag == "{http://www.w3.org/2005/Atom}entry":
             retazec = ""
             for obsahPolozky in potomok:
-                if obsahPolozky.tag == "{https://www.w3.org/2005/Atom}title":
+                if obsahPolozky.tag == "{http://www.w3.org/2005/Atom}title":
                     retazec += obsahPolozky.text + " | "
-                if obsahPolozky.tag == "{https://www.w3.org/2005/Atom}link":
+                if obsahPolozky.tag == "{http://www.w3.org/2005/Atom}link":
                     retazec += obsahPolozky.attrib["href"]
             vystup.append(retazec)
 
