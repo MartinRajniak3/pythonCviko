@@ -14,3 +14,5 @@ loop_config = ["int lo14", "ip add 1.1.1.14 255.255.255.255", "no shut"]
 connection.send_config_set(loop_config)
 vystup = connection.send_command("show ip int brief")
 print(vystup)
+
+# je hotove cele netmiko
